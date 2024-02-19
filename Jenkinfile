@@ -1,14 +1,10 @@
 pipeline {
     agent any
  
-    stages {
-        stage('Build') {
-            steps {
-                bat 'robot --version' // Make sure robotframework is installed and accessible
-            }
-        }
+    
         stage('Test') {
             steps {
+                bat "cd C://Users//UMAMC//TaskRPA"
                 bat 'robot WebLinkText.robot'
             }
         }
