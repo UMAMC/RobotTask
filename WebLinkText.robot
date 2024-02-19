@@ -5,7 +5,7 @@ Library    CustomLibraryWithRegex.py
 
 *** Variables ***
 ${URL}    https://economictimes.indiatimes.com/
-${LINK_XPATH}   //a[contains(text(), 'stock')]
+${LINK_XPATH}   //a[contains(text(), 'Modi')]
 
 *** Test Cases ***
 Search for Links with WebElements And Process Links to extract text
