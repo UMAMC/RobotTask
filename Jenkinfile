@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                bat 'robotframework --version' // Make sure Python is installed and accessible
+                bat 'robot --version' // Make sure Python is installed and accessible
             }
         }
         stage('Test') {
