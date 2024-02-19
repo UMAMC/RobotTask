@@ -1,14 +1,15 @@
 pipeline {
     agent any
  
-    
+    stages {
+        
         stage('Test') {
             steps {
                 bat "cd C://Users//UMAMC//TaskRPA"
                 bat 'robot WebLinkText.robot'
             }
         }
-    
+    }
  
     post {
         success {
